@@ -1,0 +1,84 @@
+ALL GET Type Methods
+====================
+localhost:8090/myapp/get/allEmps
+
+http://localhost:8090/myapp/get/allEmpException1
+
+localhost:8090/myapp/get/emp/id/123
+
+for invalid id
+localhost:8090/myapp/get/emp/id/s123
+
+localhost:8090/myapp/get/emp/name?firstName=DD&lastName=Mishra
+
+ALL POST Type Methods
+=====================
+POST localhost:8090/myapp/post/createEmp
+{
+    "empId": 13,
+    "firstName": "DD",
+    "lastName": "Mishra"
+}
+
+form-url-encoded Type
+---------------------
+localhost:8090/myapp/post/saveEmp
+
+empId = 12
+firstName = DD
+lastName = Mishra
+
+
+localhost:8090/myapp/post/createEmpKey
+
+As header
+key = k123
+
+As Json Request Body
+{
+    "empId": 13,
+    "firstName": "DD",
+    "lastName": "Mishra"
+}
+
+To access Swagger-UI
+http://localhost:8090/myapp/swagger-ui/
+
+ALL PUT Type Calls
+==================
+PUT localhost:8090/myapp/put/updateEmp
+
+{
+    "empId": 13,
+    "firstName": "DD",
+    "lastName": "Mishra"
+}
+
+
+ALL DELETE Type Calls
+=====================
+localhost:8090/myapp/delete/emp/13
+
+
+File Download
+
+GET
+localhost:8090/myapp/download/image/download?file=apple.jpg
+
+POST
+localhost:8090/myapp/download/image
+
+Header: x-www-form-url-encoded
+
+file=apple.jpg
+
+To show Image in the browser
+localhost:8090/myapp/download/showImage?fileName=apple.jpg
+========================================================================
+
+localhost:8090/myapp/upload/singleFile1
+
+Body: form-data
+fileName: 1.jpg
+file: C:/Desktop/1.jpg
+
