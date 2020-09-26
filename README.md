@@ -28,7 +28,7 @@ java -jar restful-quarkus-spring1-0.0.1-SNAPSHOT-runner.jar
 
 Once it runs sccessfully, access the following swagger url
 
-[swaager-ui](!http://localhost:8090/myapp/swagger-ui/)
+[swaager-ui](http://localhost:8090/myapp/swagger-ui/)
 
 
 # Technicalities
